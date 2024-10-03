@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-row min-h-screen">
+      <!-- Sider -->
+      <aside class="bg-indigo-900 text-white w-64">
+        <div class="p-4"></div>
+        <h1 class="text-2xl font-bold">Admin Panel</h1>
+        <nav class="ml-4 mt-4">
+          <ul>
+            <li class="hover:bg-indigo-600"><a href="">Dashboard</a></li>
+            <li class="hover:text-red-600"><a href="">Mahasiswa</a></li>
+            <li><a href="">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <div class="flex flex-col flex-1">
+        <!-- Header -->
+        <header class="bg-white shadow p-4">
+          <div class="flex justify-end">
+            <button class="bg-indigo-900 text-white px-4 py-2">Logout</button>
+          </div>
+        </header>
+        <div class="flex justify-between">
+            <h1>List Mhs</h1>
+            <button></button>
+        </div>
+        <!-- Main -->
+        <main class="flex-grow p-4">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <table class="table-auto min-w-full">
+              <thead>
+                <tr class="bg-gray-200">
+                  <td class="border px-4 py-2">No.</td>
+                  <td class="border px-4 py-2">NIM</td>
+                  <td class="border px-4 py-2">Nama</td>
+                  <td class="border px-4 py-2">Kelas</td>
+                  <!-- <td class="border px-4 py-2">Action</td> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border px-4 py-2">1</td>
+                  <td class="border px-4 py-2">A11.2022.14411</td>
+                  <td class="border px-4 py-2">John</td>
+                  <td class="border px-4 py-2">B1 Tadika Mesra</td>
+                </tr>
+                <tr class="bg-gray-100">
+                  <td class="border px-4 py-2">2</td>
+                  <td class="border px-4 py-2">A11.2022.14451</td>
+                  <td class="border px-4 py-2">Sutar</td>
+                  <td class="border px-4 py-2">B3 Tadika Mesra</td>
+                </tr>
+                <tr>
+                  <td class="border px-4 py-2">3</td>
+                  <td class="border px-4 py-2">A11.2022.14416</td>
+                  <td class="border px-4 py-2">Budi</td>
+                  <td class="border px-4 py-2">B6 Tadika Mesra</td>
+                </tr>
+                <tr class="bg-gray-100">
+                  <td class="border px-4 py-2">4</td>
+                  <td class="border px-4 py-2">A11.2022.14418</td>
+                  <td class="border px-4 py-2">Rafa</td>
+                  <td class="border px-4 py-2">B1 Tadika Mesra</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-indigo-900 text-white text-center p-4">
+          &copy; Admin Tailwind
+        </footer>
+      </div>
+    </div>
+
+    <!-- modal -->
+     <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-1/3">
+            <h2>Tambah Mahasiswa</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-grey-700">Nama :</label>
+                    <input type="text" class="w-full px-4 py-2 border-rounded-lg">
+                </div>
+                <div class="flex justify-end">
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded mr-2">Batal</button>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mr-2">Simpan</button>
+                </div>
+            </form>
+        </div>
+     </div>
+  </body>
+</html>
